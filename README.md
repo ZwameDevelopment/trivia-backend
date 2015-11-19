@@ -11,10 +11,36 @@ dnx web
 
 the "web" will run the project then you can call the mockup api like this:
 
-*http://localhost:5000/api/values/100*
- and it should retrieve 
+current calls:
 
 ```
-hello world 100
+ GET api/questions/5
+ GET api/questions/topic/1
+ GET api/questions/difficulty/1
 ```
+
+current enums:
+
+	public enum Topics
+	{
+		computers = 0,
+		history,
+		geography,
+		movies,
+		literature,
+		sports,
+		television,
+		games,
+		celebrities,
+		humanities,
+		religion,
+		tech,
+		generalKnowledge
+	}
+	
+	public enum Dificulties {
+		easy = 0,
+		medium,
+		hard
+	}
 
